@@ -1,0 +1,429 @@
+/* CSS HEADER */
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: none;
+    padding-left: 200px;
+}
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    height: 80px;
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .nav-links:hover {
+        background-color: #fff;
+        color: #242424;
+        border-radius: 0;
+    }
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+    }
+}
+
+/* CSS VIDEO */
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .hero-container {  
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+  
+  .hero-container > h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: -100px;
+  }
+  
+  .hero-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+
+
+/* CSS About */
+.row_about{
+    background-color: #212020;
+}
+.about_background{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: max-content;
+    height: max-content;
+    margin-top: 200px;
+    color: white;
+    padding: 30px;
+}
+.about_font_mt{
+    font-family: "Brush Script MT", cursive;
+    font-size: 55px;
+    color: #c49b63;
+    margin-bottom: 0px;
+    text-align: left;
+    position: relative; 
+    padding-left: 40px;
+}
+.about_font_mt1{
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 53px;
+    margin-top: -38px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.about_content{
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+/* CSS Services */
+.row_services {
+    background-color: #c49b63;
+}
+
+.services_content {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.services_content>p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* CSS Our menu */
+.row_menu {
+    background-color: #212020;
+    color: #faf5f5;
+}
+
+.menu_font_mt {
+    font-family: "Brush Script MT", cursive;
+    font-size: 55px;
+    color: #c49b63;
+    top: 70px;
+    text-align: right;
+    position: relative;
+}
+
+.menu_font_our{
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: 53px;
+    margin-top: 30px;
+}
+.menu_button {
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 10% 5% 10% 55%;
+}
+.menu_button1 {
+    background-color: white;
+    color: #c49b63;
+    border: 2px solid #c49b63;
+}
+.menu_button1:hover {
+    background-color: #c49b63;
+    color: white;
+}
+
+/* CSS Best Caffee sell */
+.caffee_sell{
+    text-align: center;
+    background-color: #212020;
+    color: #faf5f5;
+}
+.caffee_sell_mt{
+    font-family: "Brush Script MT", cursive;
+    font-size: 55px;
+    color: #c49b63;
+    top: 50px;
+    position: relative;
+}
+.sell_cafe_name{
+    margin-top: 12px;
+    font-size: 22px;
+    color:beige;
+
+}
+.sell_menu{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.sell_button1 {
+    background-color: #1f1e1d;
+    color: #c49b63;
+    padding: 7px;
+    border: 2px solid #c49b63;
+    margin-bottom: 60px;
+}
+.sell_button1:hover {
+    background-color: #c49b63;
+    color: white;
+}
+
+/* CSS Our chef */
+.our_chef{
+    background-color: #212020;
+}
+.our_chef_mt{
+    font-family: "Brush Script MT", cursive;
+    font-size: 55px;
+    color: #c49b63;
+    top: 50px;
+    position: relative;
+    text-align: center;
+}
+.our_chef_mt1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.our_chef_mt2{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 16px; 
+}
+.our_chef1{
+    margin-top: 82px;
+    margin-bottom: 0px;
+    background-color: #c49b63;
+    height: max-content;
+    color: white;
+    padding:30px;
+}
+.our_chef2{
+    margin-top: 34px;
+    margin-bottom: 0px;
+    background-color: #c49b63;
+    height: max-content;
+    color: white;
+    padding:30px;
+}
+.our_chef3{
+    margin-top: 58px;
+    margin-bottom: 0px;
+    background-color: #c49b63;
+    height: max-content;
+    color: white;
+    padding:30px;
+}
+.our_chef4{
+    margin-top: 82px;
+    margin-bottom: 0px;
+    background-color: #c49b63;
+    height: max-content;
+    color: white;
+    padding:30px;
+}
+.our_chef5{
+    margin-top: 58px;
+    margin-bottom: 0px;
+    background-color: #c49b63;
+    height: max-content;
+    color: white;
+    padding:30px;
+}
